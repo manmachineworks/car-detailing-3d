@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obsidian Detail | 3D Car Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="header">
+    <div class="logo">Obsidian Detail</div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact" class="cta">Book Now</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Precision-crafted detailing</p>
+        <h1>Experience a new dimension of automotive perfection</h1>
+        <p class="subtitle">Luxury-grade ceramic coatings, interior rejuvenation, and show-car finishes crafted with obsessive attention to detail.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Request an appointment</a>
+          <a class="btn ghost" href="#gallery">View our work</a>
+        </div>
+        <div class="stats">
+          <div><span>250+</span><p>Concours-level details</p></div>
+          <div><span>12 yrs</span><p>Expert craftsmanship</p></div>
+          <div><span>4.9★</span><p>Client satisfaction</p></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="canvas-wrapper">
+          <canvas id="car-canvas" aria-label="Interactive 3D car model"></canvas>
+        </div>
+        <div class="floating-card">
+          <p>Interactive 3D</p>
+          <strong>Rotate. Zoom. Inspect every contour.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-header">
+        <p class="eyebrow">Services</p>
+        <h2>Tailored programs for every finish</h2>
+        <p class="description">From swift refreshes to full multi-stage correction and ceramic protection, each service is built to highlight your vehicle's sculpted lines.</p>
+      </div>
+      <div class="service-grid">
+        <article class="card fade-in">
+          <div class="icon">✨</div>
+          <h3>Signature Gloss</h3>
+          <p>Single-stage polish, deep decontamination, and premium sealant that revives clarity with mirror depth.</p>
+          <ul>
+            <li>Foam wash &amp; paint prep</li>
+            <li>Iron &amp; clay decon</li>
+            <li>Hydrophobic sealant</li>
+          </ul>
+        </article>
+        <article class="card fade-in">
+          <div class="icon">🛡️</div>
+          <h3>Ceramic Protection</h3>
+          <p>Two-stage correction and multi-year ceramic coating for relentless gloss, UV defense, and effortless maintenance.</p>
+          <ul>
+            <li>Machine correction</li>
+            <li>Wheel &amp; glass coating</li>
+            <li>Warranty-backed gloss</li>
+          </ul>
+        </article>
+        <article class="card fade-in">
+          <div class="icon">🪑</div>
+          <h3>Interior Revival</h3>
+          <p>Leather reconditioning, steam purification, and interior ceramic to keep touchpoints luxe and protected.</p>
+          <ul>
+            <li>Leather clean &amp; nourish</li>
+            <li>Steam sanitization</li>
+            <li>Interior ceramic guard</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="section-header">
+        <p class="eyebrow">Pricing</p>
+        <h2>Transparent packages, bespoke outcomes</h2>
+        <p class="description">Select a tier or combine services to build your own program. Every vehicle receives a tailored inspection before we begin.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="card highlight fade-in">
+          <div class="badge">Most Popular</div>
+          <h3>Concours</h3>
+          <p class="price">$1,350</p>
+          <p>Multi-day correction with 5-year ceramic protection. Designed for exotic and collector vehicles.</p>
+          <ul>
+            <li>Two-stage paint correction</li>
+            <li>Wheels off ceramic coating</li>
+            <li>Interior ceramic protection</li>
+          </ul>
+          <a href="#contact" class="btn primary full">Book Concours</a>
+        </article>
+        <article class="card fade-in">
+          <h3>Studio</h3>
+          <p class="price">$850</p>
+          <p>Comprehensive enhancement and 3-year ceramic for daily drivers that deserve a dramatic gloss.</p>
+          <ul>
+            <li>Single-stage correction</li>
+            <li>Glass &amp; trim coating</li>
+            <li>Interior refresh</li>
+          </ul>
+          <a href="#contact" class="btn ghost full">Schedule Studio</a>
+        </article>
+        <article class="card fade-in">
+          <h3>Essentials</h3>
+          <p class="price">$420</p>
+          <p>Premium wash, decontamination, and sealant to reset your vehicle with a crisp, glossy finish.</p>
+          <ul>
+            <li>Two-bucket hand wash</li>
+            <li>Clay &amp; iron removal</li>
+            <li>6-month sealant</li>
+          </ul>
+          <a href="#contact" class="btn ghost full">Reserve Essentials</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-header">
+        <p class="eyebrow">Gallery</p>
+        <h2>Light, angles, and immaculate reflections</h2>
+        <p class="description">Capturing the drama of freshly corrected paint and ceramic sheen. Swipe through for highlights of our recent studio work.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-1c54fb2d273c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-6e41a1a3d2a0?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-d6c0b9b1e3b7?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-24fc0b3d1c3c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="gallery-item fade-in" style="background-image: url('https://images.unsplash.com/photo-1503736334956-09d42c89f9b5?auto=format&fit=crop&w=1200&q=80');"></div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="section-header">
+        <p class="eyebrow">Testimonials</p>
+        <h2>Trusted by collectors and daily drivers alike</h2>
+        <p class="description">Our clients choose us for meticulous craftsmanship, transparent communication, and finishes that look surreal under any light.</p>
+      </div>
+      <div class="testimonial-cards">
+        <article class="card fade-in">
+          <p class="quote">“The 3D preview let me inspect the work virtually—picked up my car looking even better in person. Unreal gloss.”</p>
+          <div class="person">
+            <div class="avatar">AL</div>
+            <div>
+              <h4>Alex Laurent</h4>
+              <p>McLaren 720S owner</p>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in">
+          <p class="quote">“From paint correction to coating, every step was documented. The reflections are liquid metal.”</p>
+          <div class="person">
+            <div class="avatar">MR</div>
+            <div>
+              <h4>Maya Rivera</h4>
+              <p>Porsche 992 owner</p>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in">
+          <p class="quote">“Their interior ceramic has kept my daily pristine despite the commute. Worth every penny.”</p>
+          <div class="person">
+            <div class="avatar">DH</div>
+            <div>
+              <h4>Damien Hughes</h4>
+              <p>Audi RS6 owner</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-header">
+        <p class="eyebrow">Enquiry</p>
+        <h2>Book your detailing experience</h2>
+        <p class="description">Tell us about your vehicle and goals. We’ll reply with a tailored recommendation and availability within one business day.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="card contact-form fade-in">
+          <div class="row">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <div class="row">
+            <label>
+              Vehicle
+              <input type="text" name="vehicle" placeholder="Make, model, year" required>
+            </label>
+            <label>
+              Service interest
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option>Concours</option>
+                <option>Studio</option>
+                <option>Essentials</option>
+                <option>Ceramic-only</option>
+                <option>Interior Revival</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Share goals, timelines, or special requests"></textarea>
+          </label>
+          <button type="submit" class="btn primary full">Send enquiry</button>
+          <p class="privacy">We never share your information. Expect a personalized response, not a bot.</p>
+        </form>
+        <div class="card studio-info fade-in">
+          <h3>Our studio</h3>
+          <p>By-appointment-only facility with controlled lighting, climate, and dust mitigation for flawless outcomes.</p>
+          <div class="info-item">
+            <h4>Location</h4>
+            <p>245 Obsidian Row, Suite 12<br>Los Angeles, CA</p>
+          </div>
+          <div class="info-item">
+            <h4>Contact</h4>
+            <p>(213) 555-0148<br>hello@obsidiandetail.com</p>
+          </div>
+          <div class="info-item">
+            <h4>Hours</h4>
+            <p>Mon–Sat · 9a–7p<br>Closed Sundays for track support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Obsidian Detail · Precision 3D Detailing</p>
+    <div class="footer-links">
+      <a href="#hero">Top</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
